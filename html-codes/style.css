@@ -1,0 +1,188 @@
+.naya{
+    text-align: center;
+    
+    
+
+}
+
+.call12{
+    color: coral;
+    text-align: end;
+}
+
+.carousel-inner 
+{
+    width: auto;
+    height: 600px;
+}  
+
+.row{
+    margin-top: 8px;
+}
+
+.naya2{
+    height: 200px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  .fa-instagram {
+    background: #125688;
+    color: white;
+}
+  
+.naya3{
+    height: 100px;
+    background: rgb(247, 245, 245);
+}
+
+footer {
+    background: rgb(102, 102, 102);
+    height: 180px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.header {
+    background-color: #F5F5F5;
+    color: coral;
+    height: 70px;
+    font-size: 27px;
+    padding: 10px;
+}
+
+a{
+    color: #01448d
+    }
+    
+    .btn-primary{
+        background-color: #033b77;
+        border-color: #023163;
+        padding: 5px 40px;
+    
+    }
+    
+    
+    a {
+        color: #01448d;
+    }
+    article > h2{
+    background-color: white;
+    }
+    article > p{
+        background-color: white;
+        text-align: center;
+        
+    }
+    .col-12{
+        background-color: rgba(253, 253, 253, 0);
+    }
+    h1{
+        text-align:center;
+        background-color: rgb(0, 0, 0);
+        color: coral;
+    }
+    .para{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .blog__thumb-img{
+        width: 250px;
+        height: 200px;
+    }
+    .blog__thumb-img1{
+        width: 150px;
+        height: 150px;
+    }
+    .blog__thumb-img3{
+        width: 250px;
+        height: 200px;
+    }
+    .blog__thumb-title{
+        background-color: white;
+        color:rgb(17, 3, 68)
+    }
+    .column1{
+        flex: 25%;
+        padding: 5px;
+        text-align: center; 
+    }
+    .column2 {
+        flex: 25%;
+        padding: 5px;
+        text-align: center;
+        
+  }
+* {
+box-sizing: border-box;
+}
+main{
+background-color: white;
+} 
+h3{
+background-color: rgb(0, 0, 0);
+color: coral;
+font-size: 28px;
+text-align: center;
+}
+.prices{
+font-size: 24px;
+}
+.heading_popular{
+background-color: rgb(0, 0, 0);
+font-size: 20px;
+color: coral;
+text-align: center;
+}
+.heading_latest{
+background-color: rgb(0, 0, 0);
+color: coral;
+text-align: center;
+}
+legend{
+background-color: rgb(0, 0, 0);
+color: coral;
+}
+
+.text-center.header{
+    background-color: rgb(0, 0, 0);
+    color: coral;
+}
+.leftcolumn{
+    float: left;
+    width: 75%;
+}
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+.card > h2{
+    background-color: rgb(0, 0, 0);
+    color: coral;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    word-wrap: normal;
+}
