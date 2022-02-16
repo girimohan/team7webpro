@@ -25,6 +25,7 @@ include 'header.php';
 
 			<input id="button" type="submit" value="Signup"><b><br><br> -->
 
+			<a href="read.php">Click to view users data</a><br>
 			<a href="login.php">Click to Login</a><br>
 			<a href="signup.php">Click to Register</a><br><br>
 
