@@ -12,7 +12,7 @@ include 'header.php';
             Admin Login
         </h1>
         <p>
-              Admin Login
+              Login with your email and password
         </p>
         <button onClick="GFG_Fun()">
             click here
