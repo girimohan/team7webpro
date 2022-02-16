@@ -30,8 +30,7 @@ include('header.php');
 					{
 
 						$_SESSION['user_id'] = $user_data['user_id'];
-						echo '<script type="text/javascript"> window.location="index.php";
-							alert("welcome")</script>'; //js code to redirect to index page
+						echo '<script type="text/javascript"> window.location="index.php";</script>'; //js code to redirect to index page
 						die;
 					}
 				}
@@ -99,3 +98,7 @@ include('header.php');
 	</div>
 </body>
 </html>
+
+<?php
+include 'footer.php';
+?>

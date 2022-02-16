@@ -12,7 +12,7 @@ include 'header.php';
             
 <!-- starting a div for signup -->
             
-  <div class="">
+  <!-- <div class="">
   <div id="box">
 		<h4>Enroll</h4>
 		<form method="post">
@@ -23,12 +23,14 @@ include 'header.php';
 			<input id="text" type="email" name="email" placeholder="Email" ><br><br>
 			<input id="text" type="text" name="address" placeholder="Address"><br><br>
 
-			<input id="button" type="submit" value="Signup"><b><br><br>
+			<input id="button" type="submit" value="Signup"><b><br><br> -->
 
-			<a href="login.php">Click to Login</a><br><br>
-		</form>
+			<a href="login.php">Click to Login</a><br>
+			<a href="signup.php">Click to Register</a><br><br>
+
+		<!-- </form>
 	</div>
-  </div>
+  </div> -->
             
             
 <!--end of sign up form  -->
