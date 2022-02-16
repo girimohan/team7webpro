@@ -30,7 +30,7 @@ include 'header.php';
 
 			mysqli_query($con, $query);
 
-			header("Location: login.php");
+			echo '<script type="text/javascript"> window.location="login.php";</script>'; //js code to redirect to index page
 			die;
 		}else
 		{

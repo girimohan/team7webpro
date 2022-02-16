@@ -30,10 +30,21 @@
               <a class="nav-link" href="blog.php">Blog</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link" href="join.php">Join Now</a>
+              <a class="nav-link" href="join.php">Courses</a>
               </li>
               <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
+              </li>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="signup.php">Register</a>
+              </li>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="login.php">Login</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="logout.php">Logout</a>
               </li>
           </ul>
           </nav>
