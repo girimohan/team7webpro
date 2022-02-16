@@ -3,12 +3,10 @@ include 'header.php';
 ?>
 
     <main>
-                <div class="row">
-                  <div class="col-md-6">
-                    <h2>
-                      Who we are!
-                  </h2>
-                  <p>
+        <div class="row">
+        <div class="col-md-6">
+            <h2>Who we are!</h2>
+                <p>
                     We olor sit amet, consectetur adipisicing elit. Totam tempora esse tempore dolore dolor
                      ducimus sed eius corporis doloribus iusto explicabo nostrum a eligendi aspernatur ullam officiis,
                       modi rem nisi minima, iste, velit necessitatibus? Perferendis quo fugiat aliquam quos repudiandae 
@@ -18,14 +16,14 @@ include 'header.php';
                         tenetur quam dolorem, 
                     sit voluptas consequuntur maiores maxime blanditiis odio ipsum, deserunt dolor velit inventore. 
                     Maxime laboriosam volupta.
-                  </p>
-                  </div>
+                </p>
+                </div>
 
-                    <div class="col-md-6">
-                      <h2>
-                        <br>
-                    </h2>
-                    <img src="images/logo_wall.png" class="img-fluid w-100"alt="">
+                <div class="col-md-6">
+                <h2>
+                <br>
+                </h2>
+                <img src="images/logo_wall.png" class="img-fluid w-100"alt="">
 
                     </div>
                   </div>
@@ -34,7 +32,7 @@ include 'header.php';
                       <h2>
                         What we do!
                     </h2>
-                    <p>
+                <p>
                       For dolor sit amet, consectetur adipisicing elit. Totam tempora esse tempore dolore dolor
                       ducimus sed eius corporis doloribus iusto explicabo nostrum a eligendi aspernatur ullam officiis,
                         modi rem nisi minima, iste, velit necessitatibus? Perferendis quo fugiat aliquam quos repudiandae 
@@ -44,25 +42,23 @@ include 'header.php';
                           tenetur quam dolorem, 
                       sit voluptas consequuntur maiores maxime blanditiis odio ipsum, deserunt dolor velit inventore. 
                       Maxime laboriosam voluptas us.
-                    </p>
-                    </div>
+                </p>
+                </div>
 
-                      <div class="col-md-6">
-                        <h2>
-                          Member of:
-                      </h2>
-                      <img src="images/new-logo2.png" class="img-fluid w-100"alt="">
+        <div class="col-md-6">
+        <h2>Member of:</h2>
+        <img src="images/new-logo2.png" class="img-fluid w-100"alt="">
 
-                      </div>
-                  </div><hr>
+        </div>
+        </div><hr>
 
-                  <div class="column text-center">
-                    <h3>Our Personal Trainer</h3>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <a href="#"><img src="images/mohan.jpg"  class="blog__thumb-img">
-                        <p class="blog__thumb-title">Mohan Giri</p>
+        <div class="column text-center">
+        <h3>Our Personal Trainer</h3>
+            </div>
+                <div class="row">
+                <div class="col-md-4">
+                    <a href="#"><img src="images/mohan.jpg"  class="blog__thumb-img">
+                    <p class="blog__thumb-title">Mohan Giri</p>
                       </a>
                     </div>
                     <div class="col-md-4">
