@@ -16,7 +16,7 @@ include 'header.php';
           <img src="html-website/images/pic5.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
           <h5>
-              <a class="btn btn-primary" href="signup.php" role="button">Register!</a>
+              <a class="btn btn-primary" href="join.php" role="button">Register!</a>
           </h5>
             <p>Check our Courses and Offers!</p>
           </div>
@@ -139,8 +139,21 @@ include 'header.php';
       </article>
     </div>
   </div><!--middle section row, 3 columns-->
+  
+  <h4> Check if gym open or not </h4>
+  <script>
+  let hour = new Date().getHours();
+  let greeting;
+    if (hour < 22) {
+      greeting = "Good day! We are open";
+    } else {
+      greeting = "Good evening! We are closed";
+    } 
 
-
+</script>
+  <button onclick='getElementById("demo").innerHTML= greeting'> Check it</button>
+  <p id="demo"></p>
+  
 
 
 <?php
