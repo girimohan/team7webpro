@@ -68,25 +68,32 @@ include('header.php');
 
 		padding: 10px;
 		width: 100px;
-		color: white;
+		color: coral;
 		background-color: lightblue;
 		border: none;
+		border-radius: 5px;
+
 	}
 
 	#box{
 
-		background-color: coral;
+		/* background-color: coral;
 		margin: none;
 		width: 300px;
+		padding: 20px; */
+	}
+	#box{
+		margin: auto;
+		width: 400px;
 		padding: 20px;
 	}
+
 
 	</style>
 
 	<div id="box">
-		
-		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Login</div>
+		<form method="post"class="form-group">
+			<div style="font-size: 20px;margin: 10px;color: coral;">Login</div>
 
 			<input id="text" type="text" name="user_name" placeholder="Username"><br><br>
 			<input id="text" type="password" name="password" placeholder="Password"><br><br>

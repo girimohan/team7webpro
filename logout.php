@@ -7,5 +7,8 @@ if(isset($_SESSION['user_id']))
 	unset($_SESSION['user_id']);
 
 }
-echo '<script type="text/javascript"> window.location="https://www.google.com/";</script>'; //js code to redirect to index page
+//echo '<script type="text/javascript"> window.location="https://www.google.com/";</script>'; //js code to redirect to index page
+echo"<h1>Thank you!<h1>";
 die;
+
+?>

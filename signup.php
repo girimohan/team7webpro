@@ -62,7 +62,7 @@ include 'header.php';
 
 		padding: 10px;
 		width: 100px;
-		color: white;
+		color: coral;
 		background-color: lightblue;
 		border: none;
         border-radius: 5px;
@@ -70,19 +70,21 @@ include 'header.php';
 	}
 
 	#box{
-
-		background-color: coral;
-		margin: none;
-		width: 300px;
+		margin: auto;
+		width: 400px;
 		padding: 20px;
+	}
+	.div11{
+		/* background-image:url("html-website/images/new-logo1.png"); */
+		margin: auto;
+		height:500px;
 	}
 
 	</style>
-
+	<div class="div11">
 	<div id="box">
-		
 		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Signup</div>
+			<div style="font-size: 20px;margin: 10px;color: coral;">Signup</div>
 
 			<input id="text" type="text" name="user_name"placeholder="User Name"><br><br>
 			<input id="text" type="password" name="password" placeholder="Password"><br><br>
@@ -95,6 +97,8 @@ include 'header.php';
 			<a href="login.php">Click to Login</a><br><br>
 		</form>
 	</div>
+	</div>
+	
 </body>
 </html>
 <?php
