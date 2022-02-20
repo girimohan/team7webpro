@@ -3,8 +3,6 @@
 <?php
 include 'header.php';
 ?>
-
-  <main>
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -16,24 +14,16 @@ include 'header.php';
           <img src="html-website/images/pic5.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
           <h5>
-              <a class="btn btn-primary" href="join.php" role="button">Register!</a>
+              <a class="btn btn-primary" href="signup.php" role="button">Register!</a>
           </h5>
             <p>Check our Courses and Offers!</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="html-website/images/pic3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
+          <img src="html-website/images/pic10.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="html-website/images/pic10.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </div>
+          <img src="html-website/images/pic4.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -44,9 +34,10 @@ include 'header.php';
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
-  </main><!--slideshow-->
-  <article class="naya">
+    </div><!--slideshow-->
+
+    <div>
+    <article class="naya">
       <h3>Train with us!</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit rem doloribus eos, tempora delectus
         obcaecati distinctio dolores repellendus architecto quod, dicta excepturi nostrum harum incidunt nobis voluptatibus i
@@ -54,7 +45,10 @@ include 'header.php';
         amet sunt delectus deleniti voluptas, reprehenderit distinctio, quas velit tenetur alias ducimus molestias id!
     </p>
   </article>
-  <div class="naya2">
+    </div>
+
+  
+  <!-- <div class="naya2">
     <form class="row row-cols-lg-auto g-3 align-items-center">
       <div class="col-8">
         <label class="visually-hidden" for="inlineFormInputGroupUsername"><h4>Enroll to our 30 days free campaign!</h4></label>
@@ -95,8 +89,38 @@ include 'header.php';
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </form>
-  </div><!--form div-->
+  </div>form div -->
+  <hr>
+  <div class = "row">
+    <div class="col-md-4">
+    <a href="signup.php">
+        <h4>Click to Enroll</h4>
+        <h6>And enjoy the features!</h6>
+        </a>    </div>
+    <div class="col-md-4">
+      <h4> Check if gym open or not </h4>
+      <script>
+          let hour = new Date().getHours();
+          let greeting;
+            if (hour < 22) {
+              greeting = "Good day! We are open";
+            } else {
+              greeting = "Good evening! We are closed";
+            }
+      </script>
+      <button onclick='getElementById("demo").innerHTML= greeting'> Check it</button>
+      <p id="demo"></p>
+    </div>
+    <div class="col-md-4 call12">
+        <a href="">
+        <h4>Call us NOW!</h4>
+        <h4>+358-987654321</h4>
+        </a>
+    </div>    
+    </div>
     <hr>
+
+  
   <div class = "row">
     <div class="col-md-4">
       <article>
@@ -140,19 +164,6 @@ include 'header.php';
     </div>
   </div><!--middle section row, 3 columns-->
   
-  <h4> Check if gym open or not </h4>
-  <script>
-  let hour = new Date().getHours();
-  let greeting;
-    if (hour < 22) {
-      greeting = "Good day! We are open";
-    } else {
-      greeting = "Good evening! We are closed";
-    } 
-
-</script>
-  <button onclick='getElementById("demo").innerHTML= greeting'> Check it</button>
-  <p id="demo"></p>
   
 
 
