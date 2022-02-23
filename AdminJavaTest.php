@@ -57,6 +57,12 @@ include 'header.php';
                     document.getElementsByTagName("body")[0]
                 .appendChild(form);
                 }
+
+    $link = mysqli_connect("172.19.0.4", "root", "password", "pinedine"); 
+ 
+    if($link === false) { 
+     die("ERROR: Could not connect. " . mysqli_connect_error()); 
+ }
                 
             }
         </script>
