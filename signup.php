@@ -2,9 +2,6 @@
 include 'header.php';
 ?>
 
-
-
-
 <?php 
 	//session_start();
 
@@ -21,31 +18,31 @@ include 'header.php';
 		$email = $_POST['email'];
 		$address = $_POST['address'];
 
-		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+		if(!empty($user_name) && !empty($password))
 		{
 
 			//save to database
-			$user_id = random_num(20);
-			$query = "insert into users (user_id,user_name,password,name,email,address) values ('$user_id','$user_name','$password','$name','$email','$address')";
+			$user_id = random_num(7);
+			$query = "insert into `users` (user_id,user_name,password,name,email,address) values ('$user_id','$user_name','$password','$name','$email','$address')";
 
 			mysqli_query($con, $query);
 
-			echo '<script type="text/javascript"> window.location="login.php";</script>'; //js code to redirect to index page
+			//echo '<script type="text/javascript"> window.location="login.php";</script>'; //js code to redirect to index page
+			echo 'You are Registered! <br>';
+			echo'Click to <a href="login.php">Login</a>';
 			die;
 		}else
 		{
 			echo "Please enter some valid information!";
 		}
 	}
+
+	
 ?>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Signup</title>
-</head>
-<body>
+
+<div>
 
 	<style type="text/css">
 	
@@ -60,10 +57,10 @@ include 'header.php';
 
 	#button{
 
-		padding: 10px;
+		padding: 5px;
 		width: 100px;
 		color: white;
-		background-color: lightblue;
+		background-color:lightblue;
 		border: none;
         border-radius: 5px;
 
@@ -71,9 +68,9 @@ include 'header.php';
 
 	#box{
 
-		background-color: coral;
-		margin: none;
-		width: 300px;
+		background-color: ;
+		margin: auto;
+		width: 400px;
 		padding: 20px;
 	}
 
@@ -82,7 +79,7 @@ include 'header.php';
 	<div id="box">
 		
 		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Signup</div>
+			<div style="font-size: 20px;margin: 10px;color: coral;">Signup</div>
 
 			<input id="text" type="text" name="user_name"placeholder="User Name"><br><br>
 			<input id="text" type="password" name="password" placeholder="Password"><br><br>
@@ -90,13 +87,12 @@ include 'header.php';
 			<input id="text" type="email" name="email" placeholder="Email" ><br><br>
 			<input id="text" type="text" name="address" placeholder="Address"><br><br>
 
-			<input id="button" type="submit" value="Signup"><b><br><br>
+			<input id="button" name="submit"type="submit" value="Signup"><b><br><br>
 
 			<a href="login.php">Click to Login</a><br><br>
 		</form>
 	</div>
-</body>
-</html>
+</div>
 <?php
 include 'footer.php';
 ?>

@@ -36,10 +36,10 @@ include('header.php');
 				}
 			}
 			
-			echo "wrong username or password!";
+			echo "Wrong username or password!";
 		}else
 		{
-			echo "wrong username or password!";
+			echo "Wrong username or password!";
 		}
 	}
 
@@ -66,18 +66,20 @@ include('header.php');
 
 	#button{
 
-		padding: 10px;
+		padding: 5px;
 		width: 100px;
 		color: white;
 		background-color: lightblue;
 		border: none;
+		border-radius: 5px;
+
 	}
 
 	#box{
 
-		background-color: coral;
-		margin: none;
-		width: 300px;
+		background-color:;
+		margin: auto;
+		width: 400px;
 		padding: 20px;
 	}
 
@@ -86,14 +88,14 @@ include('header.php');
 	<div id="box">
 		
 		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Login</div>
+			<div style="font-size: 20px;margin: 10px;color: coral;">Login</div>
 
 			<input id="text" type="text" name="user_name" placeholder="Username"><br><br>
 			<input id="text" type="password" name="password" placeholder="Password"><br><br>
 
 			<input id="button" type="submit" value="Login"><b><br><br>
-
-			<a href="signup.php">Click to Signup</a><br><br>
+			<p>If you dont have an account,
+			<a href="signup.php">Click to Signup</a></p><br>
 		</form>
 	</div>
 </body>
