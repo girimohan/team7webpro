@@ -24,7 +24,7 @@
 
 //}
 
-function random_num($length)
+function random_num($length)//to create unique user_id number
 {
 
 	$text = "";

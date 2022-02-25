@@ -73,3 +73,9 @@ ClassicEditor.create(document.querySelector("#body"), {
 }).catch(error => {
     console.log(error);
 });
+
+
+function myFunction() {
+  document.getElementById("demo").style.color = "coral";
+}
+

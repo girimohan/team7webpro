@@ -1,9 +1,11 @@
 <?php
+session_start();
+
 include('header.php');
-//session_start();
 
 include("connection.php");
 include("functions.php");
+
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -24,7 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 				if ($user_data['password'] === $password) {
 
-					$_SESSION['user_id'] = $user_data['user_id'];
+					$_SESSION['user_id'] = $user_data['name'];
+
 					echo '<script type="text/javascript"> window.location="index.php";</script>'; //js code to redirect to index page
 					die;
 				}
@@ -72,7 +75,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		#box {
 
-			background-color: ;
 			margin: auto;
 			width: 400px;
 			padding: 20px;

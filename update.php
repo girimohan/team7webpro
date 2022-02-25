@@ -65,7 +65,6 @@ include 'header.php';
 
 	#box{
 
-		background-color: ;
 		margin: auto;
 		width: 400px;
 		padding: 20px;

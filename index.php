@@ -1,9 +1,57 @@
-
-
 <?php
+session_start();
+//echo $_SESSION['user_id'];
 include 'header.php';
 ?>
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div id="slide1" class=" carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+<ul class="carousel-indicators">
+  <li data-target="#slide1" data-slide-to="0" class="active"></li>
+  <li data-target="#slide1" data-slide-to="1"></li>
+  <li data-target="#slide1" data-slide-to="2"></li>
+</ul>
+
+<!-- The slideshow -->
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="html-website/images/trainer.jpg" class="img-fluid "alt="">
+    <div class="absolute-div">
+      <div class="carousel-caption">
+          <h1 class="quote1">Success starts with self-confidence! COME, JOIN US!!</h1>
+      </div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <img src="html-website/images/man3.jpg" class="img-fluid"alt="">
+    <div class="absolute-div">
+      <div class="carousel-caption">
+          <h1 class="quote1">DO your BEST and FORGET the REST</h1>
+      </div>
+  </div>
+  </div>
+  <div class="carousel-item">
+    <img src="html-website/images/man.jpg" class="img-fluid"alt="">
+    <div class="absolute-div">
+      <div class="carousel-caption">
+          <h1 class="quote1">Don't WISH for it. WORK for it.</h1>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#slide1" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#slide1" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</a>
+
+</div>
+    
+    
+    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -11,7 +59,7 @@ include 'header.php';
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="html-website/images/pic5.png" class="d-block w-100" alt="...">
+          <img src="html-website/images/trainer.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
           <h5>
               <a class="btn btn-primary" href="signup.php" role="button">Register!</a>
@@ -34,7 +82,7 @@ include 'header.php';
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div><!--slideshow-->
+    </div>slideshow -->
 
     <div>
     <article class="naya">

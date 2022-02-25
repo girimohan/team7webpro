@@ -23,7 +23,7 @@ include 'header.php';
                 <h2>
                 <br>
                 </h2>
-                <img src="images/logo_wall.png" class="img-fluid w-100"alt="">
+                <img src="html-website/images/logo_wall.png" class="img-fluid w-100"alt="">
 
                     </div>
                   </div>
@@ -47,7 +47,7 @@ include 'header.php';
 
         <div class="col-md-6">
         <h2>Member of:</h2>
-        <img src="images/new-logo2.png" class="img-fluid w-100"alt="">
+        <img src="html-website/images/new-logo2.png" class="img-fluid w-100"alt="">
 
         </div>
         </div><hr>
@@ -57,17 +57,17 @@ include 'header.php';
             </div>
                 <div class="row">
                 <div class="col-md-4">
-                    <a href="#"><img src="images/mohan.jpg"  class="blog__thumb-img">
+                    <a href="#"><img src="html-website/images/mohan.jpg"  class="blog__thumb-img">
                     <p class="blog__thumb-title">Mohan Giri</p>
                       </a>
                     </div>
                     <div class="col-md-4">
-                      <a href="#"><img src="images/joni.jpg"  class="blog__thumb-img">
+                      <a href="#"><img src="html-website/images/joni.jpg"  class="blog__thumb-img">
                           <p class="blog__thumb-title">Joni Hyövälti</p>
                       </a>
                     </div>
                     <div class="col-md-4">
-                      <a href="#"><img src="images/edgar.jpg"  class="blog__thumb-img">
+                      <a href="#"><img src="html-website/images/edgar.jpg"  class="blog__thumb-img">
                           <p class="blog__thumb-title">Edgar Luks</p>
                       </a>
                     </div>

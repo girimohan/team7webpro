@@ -64,7 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		#box {
 
-			background-color: ;
 			margin: auto;
 			width: 400px;
 			padding: 20px;
