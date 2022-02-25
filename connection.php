@@ -1,12 +1,13 @@
 <?php
 
-$dbhost = "db";
-$dbuser = "root";
-$dbpass = "password";
-$dbname = "signup";
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$db_name = 'blog';
 
-if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
-{
+$con = new MySQLi($host, $user, $pass, $db_name);
 
-	die("failed to connect!");
+if ($con->connect_error) {
+    die('Database connection error: ' . $con->connect_error);
 }
+
