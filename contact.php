@@ -4,9 +4,36 @@ include 'header.php';
 <div class="row">
     <div class="col-md-6">
         <div class="well well-sm">
-            <form class="form-horizontal" method="post">
+            <div class="">
+                <h3>Contact us</h3>
+                <div id="error_message" style="color:coral;font-size:larger;">
+
+                </div>
+                <form action="" class="form-horizontal" method="post" id="myform" onsubmit="return validate();">
+                    <div class=" form-group">
+                        <input class="form-control"type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control"type="text" placeholder="Subject" id="subject">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control"type="text" placeholder="Phone" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control"type="text" placeholder="Email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control"placeholder="Message" id="message"></textarea>
+                    </div>
+                    <div class="btn">
+                        <input class="btn btn-primary"type="submit">
+                    </div>
+                </form>
+            </div>
+            <!-- <form class="form-horizontal" method="post" onsubmit = "return contactvalidation();">
                 <fieldset>
                     <legend class="text-center header">Contact us</legend>
+                    
                     <div class="form-group">
                         <div class="col-md-12 col-md-offset-1">
                             <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
@@ -42,27 +69,29 @@ include 'header.php';
                         </div>
                     </div>
                 </fieldset>
-            </form>
+            </form> -->
         </div>
-    </div><!--contact segment-->
+    </div>
+    <!--contact segment-->
     <div class="col-md-6">
-    <div class="panel panel-default">
-        <div class="text-center header">Our Office</div>
-        <div class="panel-body text-center">
-            <h4>Address</h4>
-            <div>
-            Hämellinna Road 12<br />
-            01200, Hämellinna<br />
-            service@olympiagym.com<br />
-            </div>
-            <hr />
-            <div class="map">
-            <iframe src="https://maps.google.com/maps?q=hamellinna%20campus&t=&z=11&ie=UTF8&iwloc=&output=embed" width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="panel panel-default">
+            <div><h3>Our Office</h3></div>
+            <div class="panel-body text-center">
+                <h4>Address</h4>
+                <div>
+                    Hämellinna Road 12<br />
+                    01200, Hämellinna<br />
+                    service@olympiagym.com<br />
+                </div>
+                <hr />
+                <div class="map">
+                    <iframe src="https://maps.google.com/maps?q=hamellinna%20campus&t=&z=11&ie=UTF8&iwloc=&output=embed" width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-</div><hr>
+</div>
+<hr>
 
 
 <?php

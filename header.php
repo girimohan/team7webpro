@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="html-website/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <script src="assets/js/scripts.js"></script>
+    <script src="contact_form.js" type = "text/javascript"></script>
     <title>OLYMPIA GYM!</title>
   </head>
   <body>
