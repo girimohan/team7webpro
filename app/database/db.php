@@ -14,8 +14,8 @@ function dd($value) // to be deleted
 //function for execution
 function executeQuery($sql, $data)
 {
-    global $conn;
-    $stmt = $conn->prepare($sql);
+    global $con;
+    $stmt = $con->prepare($sql);
     $values = array_values($data);
     $types = str_repeat('s', count($values));
     $stmt->bind_param($types, ...$values);
@@ -26,10 +26,10 @@ function executeQuery($sql, $data)
 //fuction to select all tables
 function selectAll($table, $conditions = [])
 {
-    global $conn;
+    global $con;
     $sql = "SELECT * FROM $table";
     if (empty($conditions)) {
-        $stmt = $conn->prepare($sql);
+        $stmt = $con->prepare($sql);
         $stmt->execute();
         $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         return $records;
@@ -53,7 +53,7 @@ function selectAll($table, $conditions = [])
 //function to select from table
 function selectOne($table, $conditions)
 {
-    global $conn;
+    global $con;
     $sql = "SELECT * FROM $table";
 
     $i = 0;
@@ -75,7 +75,7 @@ function selectOne($table, $conditions)
 //function to add posts
 function create($table, $data)
 {
-    global $conn;
+    global $con;
     $sql = "INSERT INTO $table SET ";
 
     $i = 0;
@@ -97,7 +97,7 @@ function create($table, $data)
 //function to update posts
 function update($table, $id, $data)
 {
-    global $conn;
+    global $con;
     $sql = "UPDATE $table SET ";
 
     $i = 0;
@@ -120,7 +120,7 @@ function update($table, $id, $data)
 //function to deleted posts
 function delete($table, $id)
 {
-    global $conn;
+    global $con;
     $sql = "DELETE FROM $table WHERE id=?";
 
     $stmt = executeQuery($sql, ['id' => $id]);
@@ -130,8 +130,8 @@ function delete($table, $id)
 //function to sort published posts
 function getPublishedPosts()
 {
-    global $conn;
-    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=?";
+    global $con;
+    $sql = "SELECT p.*, u.user_name FROM posts AS p JOIN users AS u ON p.user_id=u.user_id WHERE p.published=?";
 
     $stmt = executeQuery($sql, ['published' => 1]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
@@ -141,8 +141,8 @@ function getPublishedPosts()
 //function to sort posts by post's id 
 function getPostsByTopicId($topic_id)
 {
-    global $conn;
-    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=? AND topic_id=?";
+    global $con;
+    $sql = "SELECT p.*, u.user_name FROM posts AS p JOIN users AS u ON p.user_id=u.user_id WHERE p.published=? AND topic_id=?";
 
     $stmt = executeQuery($sql, ['published' => 1, 'topic_id' => $topic_id]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
@@ -154,12 +154,12 @@ function getPostsByTopicId($topic_id)
 function searchPosts($term)
 {
     $match = '%' . $term . '%';
-    global $conn;
+    global $con;
     $sql = "SELECT 
-                p.*, u.username 
+                p.*, u.user_name 
             FROM posts AS p 
             JOIN users AS u 
-            ON p.user_id=u.id 
+            ON p.user_id=u.user_id 
             WHERE p.published=?
             AND p.title LIKE ? OR p.body LIKE ?";
 
