@@ -41,10 +41,10 @@ function validate(){
 
   function sendEmail(){
     Email.send({
-        Host : "db",
-        Username : "root",
-        Password : "password",
-        To : "mohangiri.career@gmail.com",
+        Host : "smtp.gmail.com",
+        Username : "mohangiri.career@gmail.com",
+        Password : "",
+        To : "mohan_gi@hotmail.com",
         From : document.getElementById("email").value,
         Subject : "This is the subject",
         Body : "And this is the body"
