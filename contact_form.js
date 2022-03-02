@@ -38,3 +38,17 @@ function validate(){
     alert("Form Submitted Successfully!");
     return true;
   }
+
+  function sendEmail(){
+    Email.send({
+        Host : "db",
+        Username : "root",
+        Password : "password",
+        To : "mohangiri.career@gmail.com",
+        From : document.getElementById("email").value,
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+  }

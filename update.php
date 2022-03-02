@@ -8,7 +8,7 @@ include 'header.php';
 
     $user_id=$_GET['updateid'];
     $sql = "select * from users where user_id=$user_id";
-    $result = new MySQLi($con,$sql);
+    $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_assoc($result);
             $user_id =$row['user_id'];
             $user_name =$row['user_name'];
