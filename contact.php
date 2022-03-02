@@ -9,7 +9,7 @@ include 'header.php';
                 <div id="error_message" style="color:coral;font-size:larger;">
 
                 </div>
-                <form action="" class="form-horizontal" method="post" id="myform" onsubmit="return validate();">
+                <form action="" class="form-horizontal" method="post" id="myform" onsubmit="return validate(); sendEmail();">
                     <div class=" form-group">
                         <input class="form-control" type="text" placeholder="Name" id="name">
                     </div>

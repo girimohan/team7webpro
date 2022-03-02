@@ -44,7 +44,7 @@ function validate(){
         Host : "smtp.gmail.com",
         Username : "mohangiri.career@gmail.com",
         Password : "",
-        To : "mohan_gi@hotmail.com",
+        To : "mohangiri.career@gmail.com",
         From : document.getElementById("email").value,
         Subject : "This is the subject",
         Body : "And this is the body"

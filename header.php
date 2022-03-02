@@ -1,3 +1,8 @@
+<?php
+session_start();
+error_reporting(0);
+//echo $_SESSION['user_id'];
+?>
 
 
 <!doctype html>
@@ -16,7 +21,7 @@
     <title>OLYMPIA GYM!</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container"><?php echo $_SESSION['user_id']; ?><!--session variable prints here-->
         <nav class="navbar navbar-light bg-light">
           <a class="navbar-brand" href="index.php">
             <img src="html-website/images/logo5.png" width="100" height="100" class="d-inline-block align-center" alt="">

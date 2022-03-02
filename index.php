@@ -1,6 +1,5 @@
 <?php
-session_start();
-//echo $_SESSION['user_id'];
+
 include 'header.php';
 ?>
 <div id="slide1" class=" carousel slide" data-ride="carousel">

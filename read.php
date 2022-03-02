@@ -1,6 +1,7 @@
 
         
 <?php
+error_reporting(0);
 include 'header.php';
 include("connection.php");
 include("functions.php");
