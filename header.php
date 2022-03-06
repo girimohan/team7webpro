@@ -21,7 +21,7 @@ error_reporting(0);
     <title>OLYMPIA GYM!</title>
   </head>
   <body>
-    <div class="container"><?php echo $_SESSION['user_id']; ?><!--session variable prints here-->
+    <div class="container"><?php echo $_SESSION['id']; ?><!--session variable prints here-->
         <nav class="navbar sticky-top navbar-light bg-light">
           <a class="navbar-brand" href="index.php">
             <img src="html-website/images/logo5.png" width="100" height="100" class="d-inline-block align-center" alt="">
@@ -39,7 +39,7 @@ error_reporting(0);
               <a class="nav-link" href="blog.php">Blog</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link" href="courses.php">Courses</a>
+              <a class="nav-link" href= "dashboard.php" >Dashboard</a>
               </li>
               <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>

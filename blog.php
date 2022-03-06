@@ -1,6 +1,6 @@
 
 <?php 
-//include 'header.php';
+
 include("path.php");
 include(ROOT_PATH . "/app/controllers/topics.php");
 
@@ -134,7 +134,7 @@ if (isset($_GET['t_id'])) {
             </div>
           </div>    
         <?php endforeach; ?>
-        
+        <li><a href= "dashboard.php" >Dashboard</a></li>
 
 
       </div>

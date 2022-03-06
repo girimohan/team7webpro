@@ -20,8 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	if (!empty($user_name) && !empty($password)) {
 
 		//save to database
-		$user_id = random_num(7);
-		$query = "insert into `users` (user_id,user_name,password,name,email,address) values ('$user_id','$user_name','$password','$name','$email','$address')";
+		$id = random_num(7);
+		$query = "insert into `users` (id,user_name,password,name,email,address) values ('$id','$user_name','$password','$name','$email','$address')";
 
 		mysqli_query($con, $query);
 

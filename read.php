@@ -26,20 +26,20 @@ include("functions.php");
         $result= mysqli_query($con, $sql);
         if($result){
           while($row= mysqli_fetch_assoc($result)){
-            $user_id =$row['user_id'];
+            $id =$row['id'];
             $user_name =$row['user_name'];
             $name =$row['name'];
             $email =$row['email'];
             $address =$row['address'];
             echo '<tr>
-            <th scope ="row">'.$user_id.'</th>
+            <th scope ="row">'.$id.'</th>
             <td>'.$user_name.'</td>
             <td>'.$name.'</td>
             <td>'.$email.'</td>
             <td>'.$address.'</td>
             <td>
-            <button class="btn btn-info"><a class="text-light" href="update.php?updateid='.$user_id.'">Update</a></button>
-            <button class = "btn btn-danger"><a class="text-light" href= "delete.php?deleteid='.$user_id.'" >Delete</a></button>
+            <button class="btn btn-info"><a class="text-light" href="update.php?updateid='.$id.'">Update</a></button>
+            <button class = "btn btn-danger"><a class="text-light" href= "delete.php?deleteid='.$id.'" >Delete</a></button>
             </td>
             </tr>';
 

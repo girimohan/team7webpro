@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 				if ($user_data['password'] === $password) {
 
-					$_SESSION['user_id'] = $user_data['name'];
+					$_SESSION['id'] = $user_data['name'];
 
 					echo '<script type="text/javascript"> window.location="index.php";</script>'; //js code to redirect to index page
 					die;

@@ -3,8 +3,6 @@
 //session_start();
 require('connection.php');
 
-
-
 function dd($value) // to be deleted
 {
     echo "<pre>", print_r($value, true), "</pre>";
@@ -131,7 +129,7 @@ function delete($table, $id)
 function getPublishedPosts()
 {
     global $con;
-    $sql = "SELECT p.*, u.user_name FROM posts AS p JOIN users AS u ON p.user_id=u.user_id WHERE p.published=?";
+    $sql = "SELECT p.*, u.user_name FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=?";
 
     $stmt = executeQuery($sql, ['published' => 1]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
@@ -142,7 +140,7 @@ function getPublishedPosts()
 function getPostsByTopicId($topic_id)
 {
     global $con;
-    $sql = "SELECT p.*, u.user_name FROM posts AS p JOIN users AS u ON p.user_id=u.user_id WHERE p.published=? AND topic_id=?";
+    $sql = "SELECT p.*, u.user_name FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=? AND topic_id=?";
 
     $stmt = executeQuery($sql, ['published' => 1, 'topic_id' => $topic_id]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
@@ -159,7 +157,7 @@ function searchPosts($term)
                 p.*, u.user_name 
             FROM posts AS p 
             JOIN users AS u 
-            ON p.user_id=u.user_id 
+            ON p.user_id=u.id 
             WHERE p.published=?
             AND p.title LIKE ? OR p.body LIKE ?";
 

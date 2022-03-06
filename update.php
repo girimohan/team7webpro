@@ -6,11 +6,11 @@ include 'header.php';
 	include("connection.php");
 	include("functions.php");
 
-    $user_id=$_GET['updateid'];
-    $sql = "select * from users where user_id=$user_id";
+    $id=$_GET['updateid'];
+    $sql = "select * from users where id=$id";
     $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_assoc($result);
-            $user_id =$row['user_id'];
+            $id =$row['id'];
             $user_name =$row['user_name'];
             $name =$row['name'];
             $email =$row['email'];
@@ -24,8 +24,8 @@ include 'header.php';
 		$email = $_POST['email'];
 		$address = $_POST['address'];
 
-		$sql = "update users set user_id =$user_id, user_name='$user_name',name='$name',
-        email='$email',address='$address' where user_id=$user_id";
+		$sql = "update users set id =$id, user_name='$user_name',name='$name',
+        email='$email',address='$address' where id=$id";
         $result= mysqli_query($con,$sql);
         if($result){
             //echo"updated";
@@ -76,7 +76,7 @@ include 'header.php';
 		
 		<form method="post">
 			<div style="font-size: 20px;margin: 10px;color: coral;">Update</div>
-            User ID<input id="text" type="int" name="user_id"placeholder="User ID" value="<?php echo $user_id;?>"> <br><br>
+            User ID<input id="text" type="int" name="id"placeholder="User ID" value="<?php echo $id;?>"> <br><br>
 			User Name<input id="text"type="text" name="user_name"placeholder="User Name"value="<?php echo $user_name;?>"><br><br>
 			Full Name<input id="text" type="text" name="name" placeholder="Full Name"value="<?php echo $name;?>"><br><br>
 			Email<input id="text" type="email" name="email" placeholder="Email"value="<?php echo $email;?>" ><br><br>
