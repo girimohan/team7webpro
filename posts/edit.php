@@ -110,7 +110,3 @@
         <script
             src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
         <script src="../assets/js/scripts.js"></script>
-
-    </body>
-
-</html>

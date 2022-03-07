@@ -47,7 +47,6 @@ if (isset($_GET['t_id'])) {
  <h1 class="heading">
                 OLYMPIA GYM BLOG</h1>
         
-  <!-- Page Wrapper -->
   <div class="container">
   <article class="naya">
            
@@ -55,7 +54,7 @@ if (isset($_GET['t_id'])) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod in pellentesque massa placerat duis. Enim sit amet venenatis urna cursus eget nunc. Aenean euismod elementum nisi quis eleifend. Sed sed risus pretium quam vulputate dignissim suspendisse in. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Egestas congue quisque egestas diam in arcu. Lorem sed risus ultricies tristique. Cursus euismod quis viverra nibh cras pulvinar. Magna sit amet purus gravida quis blandit. Consequat nisl vel pretium lectus quam id. Nulla aliquet enim tortor at auctor urna nunc. Arcu odio ut sem nulla pharetra.        
         </p>
     </article>
-    <!-- Post Slider -->
+   
     <div class="col-xs-12">
           <h2 class="heading_latest"> Latest posts </h2>
       
@@ -65,10 +64,7 @@ if (isset($_GET['t_id'])) {
         <?php foreach ($posts as $post): ?>
           <div class="post">
             <style>
-                  .post-slider {
-                    position: relative;
-                  }
-                  
+                 
 
                   .post {
                     width: 300px;
@@ -110,12 +106,11 @@ if (isset($_GET['t_id'])) {
 
       
     
-    <!-- // Post Slider -->
+
 
 
     <div class="content clearfix">
 
-      <!-- Main Content -->
       <div class="main-content">
         <h1 class="recent-post-title"><?php echo $postsTitle ?></h1>
 
@@ -138,7 +133,6 @@ if (isset($_GET['t_id'])) {
 
 
       </div>
-      <!-- // Main Content -->
 
       <div class="sidebar">
 

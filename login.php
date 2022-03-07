@@ -3,7 +3,7 @@
 
 include('header.php');
 
-include("connection.php");
+include("app/database/connection.php");
 include("functions.php");
 
 

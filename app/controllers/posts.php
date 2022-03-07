@@ -1,9 +1,8 @@
 <?php
 
 include(ROOT_PATH . "/app/database/db.php");
-include(ROOT_PATH . "/app/helpers/middleware.php");
 include(ROOT_PATH . "/app/helpers/validatePost.php");
-include(ROOT_PATH . "../functions.php");
+
 
 $table = 'posts';
 
@@ -55,7 +54,7 @@ if (isset($_POST['add-post'])) {
     $errors = validatePost($_POST);
 
     if (!empty($_FILES['image']['name'])) {
-        $image_name = time() . '_' . $_FILES['image']['name'];
+        $image_name = $_FILES['image']['name'];
         $destination = ROOT_PATH . "/html-website/images/" . $image_name;
 
         $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
@@ -70,7 +69,7 @@ if (isset($_POST['add-post'])) {
     }
     if (count($errors) == 0) {
         unset($_POST['add-post']);
-        $_POST['id'] = $_SESSION['id'];
+        $_POST['user_id'] = 1737;
         $_POST['published'] = isset($_POST['published']) ? 1 : 0;
         $_POST['body'] = htmlentities($_POST['body']);
     
@@ -93,7 +92,7 @@ if (isset($_POST['update-post'])) {
     $errors = validatePost($_POST);
 
     if (!empty($_FILES['image']['name'])) {
-        $image_name = time() . '_' . $_FILES['image']['name'];
+        $image_name = $_FILES['image']['name'];
         $destination = ROOT_PATH . "/html-website/images/" . $image_name;
 
         $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
@@ -110,7 +109,7 @@ if (isset($_POST['update-post'])) {
     if (count($errors) == 0) {
         $id = $_POST['id'];
         unset($_POST['update-post'], $_POST['id']);
-        $_POST['user_id'] = $_SESSION['id'];
+        $_POST['user_id'] = 1737;
         $_POST['published'] = isset($_POST['published']) ? 1 : 0;
         $_POST['body'] = htmlentities($_POST['body']);
     
